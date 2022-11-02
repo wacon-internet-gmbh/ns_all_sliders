@@ -72,7 +72,6 @@ class OwlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
         if ($pluginName == 'Owlcarousel') {
             // add css js in header
-            $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS1'] = '<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700" rel="stylesheet" type="text/css">';
             $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS3'] = '<link rel="stylesheet" type="text/css" href="' . $extpath . 'Resources/Public/slider/owl.carousel/assets/css/custom.css" />';
             $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS4'] = '<link rel="stylesheet" type="text/css" href="' . $extpath . 'Resources/Public/slider/owl.carousel/owl-carousel/owl.carousel.css" />';
             $GLOBALS['TSFE']->additionalHeaderData[$this->request->getControllerExtensionKey() . 'CSS5'] = '<link rel="stylesheet" type="text/css" href="' . $extpath . 'Resources/Public/slider/owl.carousel/owl-carousel/owl.theme.default.css" />';
